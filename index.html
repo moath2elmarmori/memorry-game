@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- start overlay  -->
+    <div class="overlay d-none">
+      <div class="box">
+        <h1 class="the-message">Fair Play!</h1>
+        <p>Game over! Here are the results</p>
+        <div class="info-container">
+          <div class="info-box">
+            <p class="info-name">time elapsed</p>
+            <p class="info-result time-result">0:45</p>
+          </div>
+          <div class="info-box">
+            <p class="info-name">Moves Taken</p>
+            <p class="info-result moves-result">20 Moves</p>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button class="restart-game">Restart Game</button>
+          <button class="new-game">Setup New Game</button>
+        </div>
+      </div>
+    </div>
+    <!-- end overlay  -->
+    <!-- start starting game  -->
+
+    <div class="starting-game">
+      <h1>Memory</h1>
+      <div class="box">
+        <div class="theme">
+          <p class="choose">Select Theme</p>
+          <div class="choices">
+            <div class="choice numbers active" data-choice="numbers">Numbers</div>
+            <div class="choice icons" data-choice="icons">Icons</div>
+          </div>
+        </div>
+        <div class="players">
+          <p class="choose">Number Of Players</p>
+          <div class="choices">
+            <div class="choice 1-players active" data-choice="1-player">1</div>
+            <div class="choice 2-players" data-choice="2-players">2</div>
+            <div class="choice 3-players" data-choice="3-players">3</div>
+            <div class="choice 4-players" data-choice="4-players">4</div>
+          </div>
+        </div>
+        <div class="size">
+          <p class="choose">Grid Size</p>
+          <div class="choices">
+            <div class="choice grid-4-x-4 active" data-choice="grid-4">4x4</div>
+            <div class="choice grid-6-x-6" data-choice="grid-6">6x6</div>
+          </div>
+        </div>
+        <button class="start-game">Start Game</button>
+      </div>
+    </div>
+    <!-- end starting game  -->
+    <!-- start the game  -->
+    <div class="the-game d-none">
+      <header>
+        <h1>Memory</h1>
+        <div>
+          <button class="restart-game">Restart</button>
+          <button class="new-game">New Game</button>
+        </div>
+      </header>
+      <div class="the-grid-container"></div>
+    </div>
+    <!-- end the game  -->
+    <!-- start game details  -->
+
+    <div class="game-details d-none">
+      <div class="detail-box">
+        <p class="light-text">TIME</p>
+        <p class="active-color timer">0:00</p>
+      </div>
+      <div class="detail-box">
+        <p class="light-text">MOVES</p>
+        <p class="active-color moves" data-pairs="0">0</p>
+      </div>
+    </div>
+    <!-- end game details  -->
+
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
