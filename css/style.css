@@ -258,6 +258,7 @@ body.over .overlay .box .btn-container button {
   transition: 0.3s;
   position: relative;
 }
+
 .the-grid .row .icon.active {
   cursor: default;
 }
@@ -279,6 +280,16 @@ body.over .overlay .box .btn-container button {
 }
 .the-grid .row .icon.not-active::before {
   animation: hiding 0.5s forwards;
+}
+@media (max-width: 500px) {
+  .the-grid {
+    min-height: 42vh;
+  }
+  .the-grid.grid-4 .row .icon {
+    width: 10rem;
+    height: 10rem;
+    font-size: 3.5rem;
+  }
 }
 
 @keyframes showing {
