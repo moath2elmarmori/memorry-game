@@ -39,10 +39,12 @@ button {
 .light-text {
   text-transform: uppercase;
   color: #7191a5;
+  font-size: 1.5rem;
 }
 .active-color {
   color: #304859;
   letter-spacing: 1px;
+  font-size: 3rem;
 }
 
 body.over {
@@ -64,10 +66,14 @@ body.over .overlay .box {
   background-color: white;
   display: flex;
   flex-direction: column;
-  width: 60%;
-  padding: 1.75rem 2rem;
+  width: 75%;
+  padding: 2rem;
   text-align: center;
   border-radius: 7px;
+  font-size: 2rem;
+}
+body.over .overlay .box > p {
+  margin: 1rem 0;
 }
 body.over .overlay .box .info-container .info-box {
   display: flex;
@@ -78,7 +84,7 @@ body.over .overlay .box .info-container .info-box {
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
-  font-size: 1.25rem;
+  font-size: 2.5rem;
   text-transform: capitalize;
   font-weight: bold;
 }
@@ -106,7 +112,7 @@ body.over .overlay .box .btn-container button {
   padding: 0.75rem;
   border-radius: 50px;
   outline: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 /* start global media queries  */
 @media (max-width: 900px) {
@@ -216,7 +222,7 @@ body.over .overlay .box .btn-container button {
   padding: 1rem 1.5rem;
   border-radius: 50px;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: bold;
   transition: 0.3s;
 }
@@ -322,7 +328,7 @@ body.over .overlay .box .btn-container button {
   justify-content: space-between;
   gap: 2.5%;
   margin-bottom: 20px;
-  padding: 0 2.5rem;
+  padding: 0 2rem;
 }
 .game-details .detail-box {
   display: flex;
