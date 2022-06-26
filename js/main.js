@@ -94,15 +94,11 @@ function allOfIt() {
             // make the ele1 = the icon, and push this [ele1] to the [arrayOfTwoClickedIcons]
             ele1 = theIcon;
             arrayOfTwoClickedIcons.push(ele1);
-            console.log(activeIcons);
-            console.log(arrayOfTwoClickedIcons)
           } else if (activeIcons === 2) {
             // the same with the second clicked icon but i you have to make the [lockFlip] = true, and make activeIcons = 0;
             ele2 = theIcon;
             arrayOfTwoClickedIcons.push(ele2);
             lockFlip = true;
-            console.log(activeIcons)
-            console.log(arrayOfTwoClickedIcons)
             activeIcons = 0;
             handlingMoves();
             // check if the two clicked icons are equal
@@ -121,6 +117,8 @@ function allOfIt() {
                 const managePairs = activePlayer.querySelector(".moves");
                 ++managePairs.dataset.pairs;
                 lockFlip = false;
+                ele1.classList.add("disabled");
+                ele2.classList.add("disabled");
               }, 500);
             }
           }

@@ -265,8 +265,9 @@ body.over .overlay .box .btn-container button {
   position: relative;
 }
 
-.the-grid .row .icon.active {
+.the-grid .row .icon.active.disabled {
   cursor: default;
+  background-color: #bcced9;
 }
 
 .the-grid .row .icon::before {
